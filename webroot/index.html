@@ -34,7 +34,17 @@
 		  </div>
 		</div>
 	</dialog>
-	
+	<!--Spoof uname dialog-->
+	<dialog id="confirm_modal" class="modal modal-bottom sm:modal-middle">
+		<div class="modal-box">
+			<h3 class="font-bold text-base font-sans" data-i18n="warning_label">Warning!</h3>
+			<p class="py-4 font-sans" id="modal_message" data-i18n="uname_warning_label2">Setting this on may cause a bootloop or instability if spoofed incorrectly. Are you sure you want to enable post-fs-data execution?</p>
+			<div class="modal-action">
+				<button class="btn btn-md btn-error font-sans" id="modal_cancel" data-i18n="cancel_label">Cancel</button>
+				<button class="btn btn-md btn-primary font-sans" id="modal_confirm" data-i18n="confirm_label">Confirm</button>
+			</div>
+		</div>
+	</dialog>
 	<!--<div class="z-50 toast toast-top toast-center">
 		<div id="toast" class="alert alert-error bg-red-500 font-bold text-black font-sans opacity-100 duration-300">
 			<span>Spaces are not allowed in the input!</span>
