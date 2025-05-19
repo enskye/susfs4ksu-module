@@ -3,10 +3,7 @@
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-
-
-
+	<title>Document</title>
   <script type="module" crossorigin src="/assets/fade-4ApaDT9x.js"></script>
   <script type="module" crossorigin src="/assets/creditsjs-BfjoyHvA.js"></script>
   <script type="module" crossorigin src="/assets/i18n-BqJdyLAD.js"></script>
@@ -150,6 +147,31 @@
 						</div>
 					  </div>
 				    </div>
+				  </div>
+				  <div class="stats flex flex-col bg-cyan-100/20 dark:bg-black/20 mt-5 border-2 border-white backdrop-blur-[2.5px]">
+					<div class="stat">
+						<div class="stat-title text-lg text-white" data-i18n="kernel_uname_label">Kernel Uname</div>
+						<p class="text-white text-sm break-all font-sans normal-case font-normal" id="kernel_version"></p>
+					</div>
+					<div class="stat">
+						<div class="stat-title text-base text-white" data-i18n="spoof_kernel_version_label">Spoof Kernel Version</div>
+						<input type="text" id="sus_uname" placeholder="default" class="input input-sm text-sm font-sans w-full font-normal"/>
+						<div class="stat-title text-base text-white" data-i18n="spoof_kernel_build_label">Spoof Kernel Build</div>
+						<input type="text" id="sus_uname_build" placeholder="default" class="input input-sm text-sm font-sans w-full font-normal"/>
+						<div class="form-control">
+							<label class="label cursor-pointer">
+							<span class="text-white text-sm font-amongus2" data-i18n="spoof_on_boot_label">Spoof on boot</span>
+							<input type="checkbox" id="uname-spoof-on-boot" class="checkbox checkbox-sm checkbox-primary" checked="checked"/>
+							</label>
+						</div>
+						<div id="uname-at-postfs" class="form-control hidden">
+							<label class="label cursor-pointer">
+							<span class="text-white text-sm font-amongus2" data-i18n="post_fs_data_label">Execute on post-fs-data (spoofs better)</span>
+							<input type="checkbox" id="uname-spoof-on-postfsdata" class="checkbox checkbox-sm checkbox-primary" checked="checked"/>
+							</label>
+						</div>
+						<button class="btn btn-md btn-outline w-24 mt-2 border-white text-white text-sm font-normal" id="set_uname">Make it SuS</button>
+					</div>
 				  </div>
 			</section>
 		</div>
